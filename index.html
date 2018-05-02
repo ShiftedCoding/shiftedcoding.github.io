@@ -3,14 +3,16 @@
     <head>
 
         <script src="LoginHandler.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-auth.js"></script>
 
         <title>ShiftedMC</title>
     </head>
 
     <body>
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" id="email">
         <br>
-        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Password" id="password">
         <br>
         <button onclick="login()">Login</button>
     </body>
