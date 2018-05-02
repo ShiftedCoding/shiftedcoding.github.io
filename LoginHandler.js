@@ -9,6 +9,6 @@ function login() {
     };
     firebase.initializeApp(config);
     firebase.auth().signInWithEmailAndPassword(document.getElementById("email").value, document.getElementById("password").value).catch(function(error) {
-        console.log("Success!");
+        console.log("Error code " + error.code + ": " + error.message);
     });
 }
